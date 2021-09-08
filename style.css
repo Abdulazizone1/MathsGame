@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+    background: url(3-14.jpg) 100%;
+    
+    
+}
+
+#container{
+    position: relative;
+    background-color: aqua;
+    height: 450px;
+    width: 590px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px rgb(68, 164, 194);
+    -moz-box-shadow: 5px 5px 2px rgb(68, 164, 194);
+    -webkit-box-shadow: 5px 5px 2px rgb(68, 164, 194);
+}
+
+#score{
+    background-color: yellow;
+    position: absolute;
+    left: 500px;
+    padding: 10px;
+    color: rgb(60, 62, 182);
+    box-shadow: 5px 5px 3px;
+    -moz-box-shadow: 5px 5px 3px;
+    -webkit-box-shadow: 5px 5px 3px;
+}
+
+#correct{
+    background-color: rgb(102, 250, 83);
+    padding: 10px;
+    position: absolute;
+    left: 250px;
+    color: white;
+    box-shadow: 5px 5px 3px yellowgreen;
+    -moz-box-shadow: 5px 5px 3px yellowgreen;
+    -webkit-box-shadow: 5px 5px 3px yellowgreen;
+    display: none;
+
+}
+#wrong{
+    background-color: rgb(209, 24, 24);
+    padding: 10px;
+    position: absolute;
+    left: 240px;
+    color: white;
+    box-shadow: 5px 5px 3px chocolate;
+    -moz-box-shadow: 5px 5px 3px chocolate;
+    -webkit-box-shadow: 5px 5px 3px chocolate;
+    display: none;
+}
+
+#question{
+    height: 150px;
+    width: 450px;
+    margin: 50px auto 10px auto;
+    background-color: darkgoldenrod;
+    text-align: center;
+    font-size: 100px;
+    font-family: cursive;
+    -moz-box-shadow: 5px 5px 3px;
+    -webkit-box-shadow: 5px 5px 3px;
+    box-shadow: 5px 5px 3px;
+}
+
+#instuction{
+    height: 50px;
+    width: 450px;
+    background-color: rgb(253, 150, 14);
+    margin: 0px auto;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 5px 5px 3px;
+    -moz-box-shadow: 5px 5px 3px;
+    -webkit-box-shadow: 5px 5px 3px;
+}
+#choises{
+    width: 450px;
+    height: 100px;
+    margin: 10px auto 0px auto;
+}
+.box{
+    height: 85px;
+    width: 85px;
+    float: left;
+    margin-right: 35px;
+    text-align: center;
+    line-height: 80px;
+    background-color: white;
+    font-size: 1.5em;
+    box-shadow: 3px 3px 3px;
+    -moz-box-shadow: 3px 3px 3px;
+    -webkit-box-shadow: 3px 3px 3px;
+}
+.box:hover{
+    background-color: violet;
+    font-size: 2em;
+    cursor: pointer;
+    height: 90px;
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    -ms-transition: 0.2s;
+}
+.box:active{
+    height: 85px;
+}
+/* 
+#box1{
+    height: 85px;
+    width: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 35px;
+}
+#box2{
+    background-color: white;
+    height: 85px;
+    width: 85px;
+    float: left;
+    margin-right: 35px;
+}
+#box3{
+    height: 85px;
+    width: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 35px;
+}
+*/
+#box4{
+    margin-right: 0;
+}
+#startReset{
+    padding: 10px;
+    position: absolute;
+    left: 240px;
+    box-shadow: 3px 3px 3px;
+    -moz-box-shadow: 3px 3px 3px;
+    -webkit-box-shadow: 3px 3px 3px;
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    -ms-transition: 0.2s;
+}
+#startReset:hover{
+    background-color: violet;
+    font-size: 1em;
+    cursor: pointer;
+    color: antiquewhite;
+    box-shadow: 3px 3px 3px black;
+    -moz-box-shadow: 3px 3px 3px black;
+    -webkit-box-shadow: 3px 3px 3px black;
+
+}
+
+#timeremaining{
+    position: absolute;
+    left: 430px;
+    background-color: antiquewhite;
+    padding: 6px;
+    box-shadow: 3px 3px 3px black;
+    -moz-box-shadow: 3px 3px 3px black;
+    -webkit-box-shadow: 3px 3px 3px black;
+    display: none;
+}
+
+#gameOver{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    position: absolute;
+    height: 220px;
+    width: 500px;
+    top: 80px;
+    display: none;
+    left: 45px;
+    background: linear-gradient(rgb(5, 105, 136), red)
+
+}
